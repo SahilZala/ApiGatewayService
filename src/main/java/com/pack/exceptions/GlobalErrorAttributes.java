@@ -25,6 +25,8 @@ public class GlobalErrorAttributes extends DefaultErrorAttributes{
         map.put("status", HttpStatus.BAD_REQUEST.value());
         map.put("message",super.getError(request).getMessage());
         map.put("body",null);
+        
+        log.error(map.toString());
         return map;
     }
 

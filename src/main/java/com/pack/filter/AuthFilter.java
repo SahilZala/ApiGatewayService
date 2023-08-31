@@ -57,6 +57,8 @@ public class AuthFilter extends AbstractGatewayFilterFactory<AuthFilter.Config> 
 			String authHeader = exchange.getRequest().getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);
 			
 			authHeader = authHeader.substring(7);	
+
+			log.info(authHeader);
 			String userName = jwtUtil.extractUsername(authHeader);
 			log.info(userName);
 			
@@ -87,6 +89,7 @@ public class AuthFilter extends AbstractGatewayFilterFactory<AuthFilter.Config> 
 					}					
 				}
 			}
+			
 		});
 	}
 	

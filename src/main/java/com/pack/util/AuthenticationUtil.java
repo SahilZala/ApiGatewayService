@@ -17,7 +17,8 @@ public class AuthenticationUtil {
 			"/product_service/admin/create/sub_category",
 			"/product_service/admin/get_all/product",
 			"/product_service/admin/get_all/main_category",
-			"/product_service/admin/get_all/sub_category");
+			"/product_service/admin/get_all/sub_category",
+			"/product_service/admin/create/product/images/upload");
 	
 	public static String USER_ROLE = "ROLE_USER";
 	public static String ADMIN_ROLE = "ROLE_ADMIN";
