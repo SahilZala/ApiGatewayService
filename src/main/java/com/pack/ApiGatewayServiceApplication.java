@@ -7,7 +7,6 @@ import org.springframework.web.reactive.config.EnableWebFlux;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableWebFlux
 public class ApiGatewayServiceApplication {
 
 	public static void main(String[] args) {
